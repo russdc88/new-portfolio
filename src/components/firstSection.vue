@@ -39,7 +39,7 @@ export default {
 		ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 		var firstScroll = new TimelineMax();
 		
-
+		
 		firstScroll.set("#profile-image",{x:"-100%", opacity:0})
 		firstScroll.set("#profile-content", {x:"100%", opacity:0})
 		firstScroll.to(["#profile-image","#profile-content"], 3, {x:"0%", opacity:1}
@@ -50,7 +50,7 @@ export default {
 
 		var containerScene = new ScrollMagic.Scene({
 		triggerElement: '.section-1',
-		triggerHook: 0.4,
+		triggerHook: 0.7,
 		duration: 400
 })
 	.setTween(firstScroll)
